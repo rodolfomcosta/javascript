@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratando dados</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aquamarine;
+            text-align: center;
+            margin-top: 200px;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        var nome = window.prompt('Qual é o seu nome?')
+        document.write(`Seu nome é ${nome} e tem ${nome.length} letras`)
+    </script>
+
+    <!--
+                    -- Formatando números --
+        n.toFixed(2) - para o número ter 2 casas decimais
+        n.toFixed(2).replace('.', ',') - para substituir o ponto por vírgula
+        Ex:
+        n = 15.5
+        n.toFixed(2) - n = 15.50
+        n.toFixed(2).replace('.', ',') - n = 15,50
+
+        n.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) - R$ 15,50
+
+    -->
+</body>
+</html>
