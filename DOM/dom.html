@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: rgb(173, 121, 222);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Inciando trabalhos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        var p1 = document.getElementsByTagName('p')[1]
+        /*
+            O JS vai buscar o elemento pela tag ('p') e será o primeiro elemento p, definido pelo [0]
+            "Aqui vai o resultado"
+            Se fosse [1], seria o segundo elemento ('p')
+            "Aprendendo a usar DOM em JS"
+        */
+       document.write('Está escrito assim: ' + p1.innerText)
+       /*
+            O innerText pega o texto
+            O innerHTML pega tbm as tags
+       */
+      document.write('Está escrito em HTML assim: ' + p1.innerHTML)
+      var msg = document.getElementById('msg')
+      msg.style.backgroundColor = 'black'
+      msg.innerText = 'Estou aguardando'
+    </script>
+
+    <!--
+                            -- DOM --
+        DOM - Document Object Model
+            Um conjunto de objetos do navegador que dão acesso à componentes internos do site do usuário
+        
+        Árvore DOM
+            window - a raiz, onde concentra tudo que está no JS
+                location - URL
+                document - documento atual
+                    html
+                        head
+                        body
+                history - guarda "de onde veio e pra onde vai" VER MELHOR DEPOIS
+                Existem outros objetos
+        
+        Selecionando
+            Marca    - getElementsByTagName()
+            ID       - getElementById()
+            Nome     - getElementsByName()
+            Classe   - getElementsByClassName()
+            Seletor  - getElementsBySelector()
+        
+            
+            
+    -->
+</body>
+</html>
