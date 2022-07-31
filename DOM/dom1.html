@@ -19,8 +19,39 @@
 </head>
 <body>
     <div id="area">
+    <!--
+        Evento DOM dentro do HTML.
+            onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"
+    -->
         intereja...
     </div>
+
+    <script>        
+        var area = window.document.getElementById('area')
+        addEventListener('click', clicar)
+        addEventListener('mouseenter', entrar)
+        addEventListener('mouseout', sair)
+        /*
+            Evento DOM dentro do script
+            addEventListener('quando isso', execute essa function)
+        */
+
+        function entrar() {
+            area.innerText = 'Entrou'
+            area.style.background = 'yellow'
+        }
+
+        function clicar() {
+            area.innerText = 'Clicou'
+            area.style.background = 'red'
+        }
+
+        function sair() {
+            area.innerText = 'Saiu'
+            area.style.background = 'brown'
+        }
+
+    </script>
 
     <!--
         Eventos DOM são todas as coisas que podem acontecer com os elementos da página. Por exemplo:
@@ -31,6 +62,16 @@
             mousedown - quando o botão do mouse é apertado e segurado
             mouseup - quando solta-se o botão do mouse
             click - quando o botão do mouse é apertado rapidamente
+
+        Para disparar um evento, utiliza-se uma função, que é um bloco de códigos executado apenas se o evento ocorrer. Pode ser configurada no corpo HTML ou script.
+
+            function acao() {
+                bloco de código
+            }
+
+            function nome_da_function('pode colocar parâmetros') {
+                bloco de código
+            }
     -->
 </body>
 </html>
