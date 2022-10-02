@@ -31,4 +31,3 @@ function Carro(name){
 
 const fusca = new Carro("fusquinha")
 console.log(fusca.velocity(60))
-let 
