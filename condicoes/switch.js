@@ -23,8 +23,12 @@ switch(diaSem) {
     case 6:
         console.log('Sábado')
         break
+    default:
+        //código
+        break
 }
 
 /*
     O switch só funciona com números inteiros e strings
+    Se o case não tiver um break, a aplicação executar o próximo até achar um, ou terminar o switch
 */
