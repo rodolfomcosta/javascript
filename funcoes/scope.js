@@ -1,7 +1,8 @@
 /*
     function scope
 
-    * toda função sem return é undefined
+    * toda função retorna alguma coisa
+        * funções sem return retornam undefined
 
 
 
